@@ -1,0 +1,26 @@
+{
+  "name": "restapi-if11",
+  "version": "1.0.0",
+  "description": "Latihan pertama membuat restful api IF11 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "restapi-if11"
+  },
+  "keywords": [
+    "api",
+    "restful",
+    "nodejs",
+    "latihan"
+  ],
+  "author": "Muhammad Amrullah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "mysql": "^2.18.1"
+  }
+}
