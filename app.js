@@ -84,12 +84,11 @@ app.delete("/api/khodam/:id", (req, res) => {
 
 // Method POST: Tambah nama + kombinasikan dengan nama random dari tabel khodam
 app.post("/api/khodam/combine", (req, res) => {
-  const { name } = req.body; // Objek input
+  const { name } = req.body; 
   if (!name) {
     return res.status(400).json({ message: "Nama harus diisi" });
   }
 
-  // Query untuk mendapatkan nama random dari tabel khodam
   const queryRandom = "SELECT name FROM khodam ORDER BY RAND() LIMIT 1";
 
   koneksi.query(queryRandom, (err, rows) => {
@@ -101,13 +100,10 @@ app.post("/api/khodam/combine", (req, res) => {
       return res.status(404).json({ message: "Tidak ada nama khodam tersedia di database" });
     }
 
-    // Ambil nama random dari hasil query
     const randomName = rows[0].name;
 
-    // Kombinasi nama yang di-post dengan nama random
     const combinedName = `${name} ${randomName}`;
 
-    // Return hasil kombinasi
     res.status(200).json({
       success: true,
       message: "Kombinasi nama berhasil dibuat",
