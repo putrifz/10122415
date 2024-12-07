@@ -1,3 +1,13 @@
+#Nyalakan XAMPP
+#Import Database db_khodam 
+
+#MENJALANKAN API
+Masuk Ke Terminal
+Masuk ke Directori yang memiliki file app.js
+Jalankan :
+	npm install
+	node app.js
+
 CARA MENGGUNAKAN FEATURE CRUD KHODAM
 1. Create Khodam
 	URL : POST 0/api/khodam
