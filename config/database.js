@@ -4,7 +4,7 @@ const koneksi = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "db_restapi_if09",
+  database: "db_khodam",
   multipleStatements: true,
 });
 
