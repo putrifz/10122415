@@ -1,0 +1,49 @@
+CARA MENGGUNAKAN FEATURE CRUD KHODAM
+1. Create Khodam
+	URL : POST 0/api/khodam
+	Req :  {
+  		"name": "Nama Khodam"
+		}
+	Succes : {
+		  "success": true,
+ 		  "message": "Khodam berhasil ditambahkan!",
+  		  "id": 1
+		}
+
+
+2. Read Khodam 
+	URL : GET /api/khodam
+	Succes : Menampilkan semua list khodam
+
+3. Update Khodam
+	URL : PUT /api/khodam/:id
+	Req :  {
+  		"name": "Nama Khodam Baru"
+		}
+	Succes : {
+		  "success": true,
+ 		  "message": "Update Berhasil"
+		}
+
+4. Delete Khodam
+	URL : DELETE /api/khodam/:id
+	Succes : {
+		  "success": true,
+ 		  "message": "Khodam berhasil dihapus"
+		} 
+
+
+CARA MENGGUNAKAN FEATURE KOMBINASI KHODAM
+URL : POST /api/khodam/combine
+Req : {
+  	"name": "Masukan Nama Anda"
+	}
+Succes : {
+  "success": true,
+  "message": "Kombinasi nama berhasil dibuat",
+  "data": {
+    "Nama": "Nama Anda",
+    "Khodam": "Nama Khodam Random",
+    "Saya_Adalah": "Nama Anda Nama Khodam Random"
+  }
+}

@@ -82,7 +82,7 @@ app.delete("/api/khodam/:id", (req, res) => {
   });
 });
 
-// Method POST: Tambah nama + kombinasikan dengan nama random dari tabel khodam
+// Feature Dapatkan Khodam
 app.post("/api/khodam/combine", (req, res) => {
   const { name } = req.body; 
   if (!name) {
@@ -108,9 +108,9 @@ app.post("/api/khodam/combine", (req, res) => {
       success: true,
       message: "Kombinasi nama berhasil dibuat",
       data: {
-        postedName: name,
-        randomKhodam: randomName,
-        combinedName: combinedName,
+        Nama: name,
+        Khodam: randomName,
+        Saya_Adalah: combinedName,
       },
     });
   });
