@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2024 at 06:43 AM
+-- Generation Time: Dec 07, 2024 at 04:36 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -24,53 +24,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bootcamp`
---
-
-CREATE TABLE `bootcamp` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `website` varchar(100) NOT NULL,
-  `phone` varchar(20) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `address` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `bootcamp`
---
-
-INSERT INTO `bootcamp` (`id`, `name`, `description`, `website`, `phone`, `email`, `address`) VALUES
-(1, 'Ryan Muhammad Hildan', 'Latihan membuat restful api sederhana', 'https://ryanbootcamp.org', '+62 895 3719 37227', 'ryanmhildan@gmail.com', 'Pasirleutik 40125');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `khodam`
 --
 
 CREATE TABLE `khodam` (
   `id` int(11) NOT NULL,
-  `namakhodam` varchar(100) NOT NULL
+  `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `khodam`
 --
 
-INSERT INTO `khodam` (`id`, `namakhodam`) VALUES
-(1, 'Sapu Terbang');
+INSERT INTO `khodam` (`id`, `name`) VALUES
+(1, 'Monyet Pantai'),
+(2, 'Hileud Pucuk'),
+(3, 'Agus Sedih'),
+(4, 'Si Hitam'),
+(5, 'Panglima Adi'),
+(6, 'Satria Garuda'),
+(7, 'Beruk'),
+(8, 'Belut Sawah'),
+(9, 'Si Manis Jembatan Ancol'),
+(10, 'Skibidi'),
+(11, 'Kucing Oren'),
+(12, 'Nie Yamin');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `bootcamp`
---
-ALTER TABLE `bootcamp`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `khodam`
@@ -83,16 +65,10 @@ ALTER TABLE `khodam`
 --
 
 --
--- AUTO_INCREMENT for table `bootcamp`
---
-ALTER TABLE `bootcamp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `khodam`
 --
 ALTER TABLE `khodam`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
